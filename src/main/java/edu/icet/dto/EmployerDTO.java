@@ -1,15 +1,15 @@
 package edu.icet.dto;
 
-import lombok.Data;
 
-import java.time.LocalDate;
+import lombok.Data;
+import java.time.LocalDateTime;
 
 @Data
 public class EmployerDTO {
-    private Integer id;
+    private Long id;
     private String name;
     private String email;
     private String department;
-    private LocalDate createdDate;
-    private LocalDate updatedDate;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 }
