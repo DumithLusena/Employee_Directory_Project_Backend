@@ -8,8 +8,8 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-@Table(name = "employers",uniqueConstraints = @UniqueConstraint(columnNames = "email"))
-public class Employer {
+@Table(name = "employee",uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
