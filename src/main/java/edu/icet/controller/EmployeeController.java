@@ -23,7 +23,7 @@ public class EmployeeController {
         employeeService.save(employeeDTO);
     }
 
-    @GetMapping("/all-employee")
+    @GetMapping("/get-all-employee")
     public List<EmployeeDTO> getAllEmployee() {
         return employeeService.getAllEmployee();
     }

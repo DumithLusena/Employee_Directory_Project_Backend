@@ -26,6 +26,10 @@ public class EmployeeServiceImpl implements EmployeeService {
             throw new RuntimeException("Email already exists");
         }
 
+        if (!employerDTO.getEmail().matches("^[A-Za-z0-9+_.-]+@(.+)$")) {
+           throw new RuntimeException("Invalid email format");
+        }
+
         try {
             Department.valueOf(employerDTO.getDepartment());
         } catch (IllegalArgumentException e) {

@@ -2,7 +2,8 @@ package edu.icet.dto;
 
 
 import lombok.Data;
-import java.time.LocalDateTime;
+
+import java.time.LocalDate;
 
 @Data
 public class EmployeeDTO {
@@ -10,6 +11,6 @@ public class EmployeeDTO {
     private String name;
     private String email;
     private String department;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+    private LocalDate createdAt;
+    private LocalDate updatedAt;
 }
